@@ -1,0 +1,57 @@
+  
+        /* selector{tag,class,id are three main selectors
+        use properties and value
+        } */
+        /* h1{ 
+            color:blue 
+        }  */
+        img {
+            border-radius: 50%;
+            border: 1px solid #ccc; /* Add a border */
+        }
+        
+        /* we use .classname */
+        .title{ 
+           font-style: oblique;
+           font-size: xx-large;
+        }
+        .title{
+            color:brown
+        }
+        .subtitle{
+            color: rgb(7, 238, 7);
+        }
+        /* we use #idname */
+        #unique-id{
+            color: aqua;
+        }
+        .banner{
+            width: 100%;
+            height: 850px; 
+            text-align: center;
+            color: blue;
+          
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Eopsaltria_australis_-_Mogo_Campground.jpg/1280px-Eopsaltria_australis_-_Mogo_Campground.jpg)
+        }
+        /*
+        *{
+            text-decoration:underline;
+            font-size: 20px;
+        }
+        */
+        .Varansi .female{
+            color: aquamarine;
+        }
+
+        .Varansi >.female{
+            /* > symbol targetjust near the selector not in the loop */
+            color: rgb(255, 127, 210);
+        }
+         .Delhi .male{
+            color:#cbe410 ;
+        }
+        .Bihar .male{
+            color: red;
+        }
+        
+    
