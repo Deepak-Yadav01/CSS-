@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preority</title>
+    <style>
+/* Bigger the number is going to win.and if numbers are tied, then below written is going to win,by the css selector specificity */
+
+       h1{ /*0 0 1 */ 
+            color: chocolate;
+        }
+        h4.female{
+            color: chartreuse;
+        }
+        /* ! important removes all the applied property,and apply only jiske sathh ye hota hai,jaise ki chacha vidhayak hai */
+
+        /* .female{
+         color: crimson !important;
+        } */
+
+        .female{/*0 1 0 */
+         color: blue ;
+        } 
+
+        #delhi .female{/*1 1 0 */
+         color: red;
+        }
+        
+        .ndls .female{/*0 2 0 */
+            color:greenyellow;
+        }
+
+.india #delhi .female{/*1 2 0 */
+    color: green;
+}
+.india .ndls .female{/*0 3 0 */
+    color: yellow;
+}
+#bharat .ndls .female{/*1 2 0 */
+    color: purple;
+}
+#bharat #delhi h4.female{/*2 1 1 */
+    color: hotpink;
+}
+#bharat #delhi .female{/*2 1 0 */
+    color: orangered;
+}
+    </style>
+</head>
+<body>
+    <div class="india" id="bharat">
+        <h1>Varansi</h1>
+    <div class="Varansi">
+        <div>
+            <h4 class="female">female</h4>
+            <h4 class="female">female</h4>
+            <h4 class="male">male</h4>
+            <h4 class="female">female</h4>
+            <h4 class="male">male</h4> 
+        </div>
+       <h4 class="female">female</h4>
+       <h4 class="female">female</h4>
+       <h4 class="male">male</h4>
+       <h4 class="female">female</h4>
+       <h4 class="male">male</h4> 
+    </div>
+    <h1>Delhi</h1>
+    <div id="delhi" class="ndls">
+       <h4 class="female">female</h4>
+       <h4 class="male">male</h4>
+       <h4 class="male">male</h4>
+       <h4 class="female">female</h4>
+       <h4 class="male">male</h4> 
+    </div>
+    <h1>Bihar</h1> 
+    <div class="Bihar">
+       <h4 class="female">female</h4>
+       <h4 class="female">female</h4>
+       <h4 class="male">male</h4>
+       <h4 class="female">female</h4>
+       <h4 class="male">male</h4> 
+    </div>
+
+    </div>
+    
+</body>
+</html>
