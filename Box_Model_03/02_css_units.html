@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units</title>
+    <style>
+        html{
+            font-size: 48px;
+        }
+        .parent{  
+         width: 100%;
+         padding-top:20px ; 
+         padding-bottom: 20px;
+         background-color: aquamarine;
+         font-size: 24px;
+        }
+        .parent1{
+          background-color: rgb(255, 0, 195);
+          font-size: 28px;
+        }
+        .parent2{ 
+           background-color: rgb(0, 255, 42);
+           font-size: 18px;
+        }
+        .child{
+         background-color: yellow;
+        width: 30%;
+        }
+        .child1{
+          font-size: .5em;
+          width: 100vw;
+        }
+        .child2{
+           font-size: .25rem; 
+        }
+
+    </style>
+</head>
+<body>
+    <!-- css units are: Pixels, Percentage %(wrt parent), EM/REM, VW/VH -->
+
+    <div class="parent parent1">
+        <h1>Deepak Yadav</h1>
+        <div class="child child1">
+            <h1>HELLO WORLD!-CHILD1</h1>
+        </div>
+        <div class="child child2">
+            <h1>HELLO WORLD!-CHILD2</h1>
+        </div>
+    </div>
+    <div class="parent parent2">
+        <h1>Deepak Yadav</h1>
+        <div class="child child1">
+            <h1>HELLO WORLD!-CHILD1</h1>
+        </div>
+        <div class="child child2">
+            <h1>HELLO WORLD!-CHILD2</h1>
+        </div>
+    </div>
+</body>
+</html>
