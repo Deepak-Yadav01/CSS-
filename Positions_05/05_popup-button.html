@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position | popup-button</title>
+    <style>
+        .popup-button{
+            background-color: blanchedalmond;
+            width: 200px;
+            position: relative;
+            left: 150px;
+            top: 10px;
+        }
+        .popover{
+            border: solid salmon 1px;
+            background-color: rgb(104, 173, 173);
+            display: none;
+            position: absolute;
+        }
+        .popup-button:hover .popover{
+           display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="popup-button">
+       <button>login</button>
+       <div class="popover">
+        <ul>
+            <li>Home</li>
+            <li>Dashboards</li>
+            <li>Portfolio</li>
+            <li>Discord-links</li>
+        </ul>
+       </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, alias saepe? Quam fuga dolores ea nostrum alias itaque! Explicabo, ut. Quod maiores ullam pariatur est nobis atque! Nam repellat blanditiis iusto aspernatur id sapiente cupiditate, quam voluptates unde ipsa explicabo.</p>
+</body>
+</html>
