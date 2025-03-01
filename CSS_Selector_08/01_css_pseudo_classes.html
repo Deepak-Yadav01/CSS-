@@ -1,0 +1,149 @@
+
+<!-- css psuedo classes (hover, focus, visited, nth-chlid, checked, not) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>pseudo classes</title>
+    <style>
+        .fruits li:nth-child(1){
+              color: rgb(239, 239, 39);
+        }
+        .fruits li:nth-child(3){
+              color: rosybrown;
+        }
+        .fruits li:nth-child(5){
+              color: green;
+        }
+        .fruits li:nth-child(4){
+              color: orange;
+        }
+        .fruits li:nth-child(2){
+              color: violet;
+        }
+        .fruits li:first-child{
+              color: goldenrod;
+        }
+        .fruits li:last-child{
+              color: skyblue;
+        }
+
+        /* .fruits li{
+            text-decoration: underline;
+        } */
+
+        /* .fruits li:not(.banana){
+            text-decoration: underline;
+        } */
+
+        .fruits li:not(li:first-child){
+            text-decoration: underline;
+        }
+
+        .buy-now{
+            padding: 5px 10px;
+            border-radius: 10px;
+            border: none;
+            background-color: chartreuse;
+            width: 150px;
+            font-size: 12px;
+            cursor: pointer;  /* it is the differntiator */
+            /* cursor: crosshair;
+            cursor: copy;
+            cursor:zoom-out;
+            cursor: no-drop; */
+        }
+        .buy-now:hover{
+            border: 1px solid blue;
+            background-color: rgb(222, 132, 132);
+            width: 200px;
+        }
+        .google-link{
+            text-decoration: none;
+        }
+        .google-link:hover{
+            text-decoration:underline;
+        }
+        .google-link:visited{
+            color: rgb(220, 80, 80);
+        }
+
+        input:focus{
+            border: 2px solid blue;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+        table td{
+            border: 1px solid #ccc;
+        }
+        table tr:nth-child(even){
+            background-color: beige;
+        }
+        table tr:nth-child(odd){
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <p>Buy now</p>
+    <form action="">
+        <label for="">Full Name:</label>
+        <input type="text" placeholder="Enter your name">
+    </form>
+
+    <ul class="fruits">
+        <li>Mango</li>
+        <li>Grapes</li>
+        <li>Papaya</li>
+        <li>Orange</li>
+        <li class="banana">Banana</li>
+    </ul>
+
+    <button class="buy-now">Buy Now</button>
+    <a href="#" class="google-link">google</a>
+
+   <table>
+    <tr>
+        <td>Name</td>
+        <td>Age</td>
+    </tr>
+    <tr>
+        <td>Deepak</td>
+        <td>22</td>
+    </tr>
+    <tr>
+        <td>Mahi</td>
+        <td>23</td>
+    </tr>
+    <tr>
+        <td>Nisha</td>
+        <td>24</td>
+    </tr>
+    <tr>
+        <td>Neha</td>
+        <td>18</td>
+    </tr>
+    <tr>
+        <td>Guddu</td>
+        <td>21</td>
+    </tr>
+    <tr>
+        <td>Meera</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>kajal</td>
+        <td>17</td>
+    </tr>
+    <tr>
+        <td>DY</td>
+        <td>22</td>
+    </tr>
+   </table>
+  
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!-- pseudo elements --(before, after) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .drop-down span:nth-child(1)::before {
+            color: red;
+            content: "►";
+        }
+        .drop-down span:nth-child(2)::after {
+            color: green;
+            content: "▼";
+        }
+    </style>
+</head>
+<body>
+    <div class="drop-down">
+        <!-- <span>&#9658; Open</span>
+        <span>&#9660; collapse</span> -->
+
+        <span>Open</span>
+        <span>collapse</span>
+    </div>
+</body>
+</html>
