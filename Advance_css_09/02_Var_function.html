@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Functions( var() )</title>
+    <style>
+        :root{
+            --body-bg-color: black;
+            --content-bg-color: rgb(176, 203, 236);
+            --content-color:green;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            /* background-color:blue; */
+            background-color: var(--content-bg-color);
+            color: var(--content-color);
+            /* display: flex; but not use now */
+            display: inline-block; 
+        }
+
+        .container  ul li a{
+            color: var(--body-bg-color);
+        }
+
+        .leftbar{
+            width: 200px;
+            height: 100vh;
+            /* background-color: yellow; */
+            border: 1px solid;
+            display: inline-block;
+        }
+
+        .rightbar{
+            /* calc() */
+            width: calc(100% - 200px);
+            height: 100vh;
+            /* background-color: cadetblue; */
+            display: inline-block;
+            float:right;
+        } 
+
+        .rightbar p a::after{
+            /* attr() */
+            content: "("attr(href)")";
+            /* content: "("attr(data-id)")"; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="leftbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="rightbar">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aliquam facere voluptatum dolor fuga quibusdam repellat consequatur illo deserunt corporis. Velit veritatis reprehenderit, accusantium illum consectetur nostrum eius alias culpa? <a href="https://google.com" data-id="RandomId">Read more ....</a></p>
+        </div>     
+    </div>
+</body>
+</html>
