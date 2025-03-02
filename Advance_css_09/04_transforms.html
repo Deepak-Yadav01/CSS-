@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform Examples</title>
+    <style>
+        /* Centering everything in the page */
+        body {
+            display: flex;
+            flex-wrap: wrap;  /* Allows items to wrap on smaller screens */
+            gap: 20px;  /* Space between elements */
+            justify-content: center;  /* Centers horizontally */
+            align-items: center;  /* Centers vertically */
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        /* Common styles for all boxes */
+        .box {
+            width: 100px;
+            height: 100px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            line-height: 100px;  /* Aligns text vertically */
+            border-radius: 10px;  /* Rounded corners */
+        }
+
+        /* 1. Translate: Moves the element 50px right and 50px down */
+        .translate {
+            background: red;
+            transform: translate(50px, 50px);
+        }
+
+        /* 2. Rotate: Rotates the element 45 degrees clockwise */
+        .rotate {
+            background: blue;
+            transform: rotate(45deg);
+        }
+
+        /* 3. Scale: Increases the size of the element to 1.5 times */
+        .scale {
+            background: green;
+            transform: scale(1);/* Default state */
+        }
+
+        .scale:hover {
+            transform: scale(1.5);
+        }
+
+        /* 4. Skew: Skews the element (20 degrees on X-axis, 10 degrees on Y-axis) */
+        .skew {
+            background: orange;
+            transform: skew(20deg, 10deg);
+        }
+
+        /* 5. Multiple Transformations: Combines translate, rotate, and scale */
+        .multiple {
+            background: purple;
+            transform: translate(30px, 30px) rotate(30deg) scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Boxes with different transformations applied -->
+    <div class="box translate">Translate</div>
+    <div class="box rotate">Rotate</div>
+    <div class="box scale">Scale</div>
+    <div class="box skew">Skew</div>
+    <div class="box multiple">Multiple</div>
+</body>
+</html>
+
