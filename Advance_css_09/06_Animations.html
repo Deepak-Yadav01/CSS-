@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        /* 🎬 Step 1: Define the animation using @keyframes */
+        @keyframes moveBox {
+            0% { 
+                transform: translateX(0);  /* Start position */
+            }
+            50% { 
+                transform: translateX(200px);  /* Moves 200px right */
+                background-color: yellow;  /* Changes to yellow */
+            }
+            100% { 
+                transform: translateX(0);  /* Moves back to start */
+                background-color: red;  /* Changes back to red */
+            }
+        }
+
+        /* 🎨 Step 2: Style the box and apply animation */
+        .box {
+            width: 100px;
+            height: 100px;
+            background: blue;  /* Default color */
+            position: relative; /* Helps in moving the box */
+            animation: moveBox 5s ease-in-out infinite;
+              
+            /* 👇 Animation Breakdown 👇 */
+            /* moveBox → Uses the keyframes above */
+            /* 5s → Animation duration */
+            /* ease-in-out → Smooth acceleration/deceleration */
+            /* infinite → Loops forever */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>CSS Animation Example</h2>
+    <div class="box"></div>  <!-- 🚀 Moving box -->
+
+</body>
+</html>
