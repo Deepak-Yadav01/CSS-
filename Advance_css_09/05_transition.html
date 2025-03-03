@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions Example</title>
+    <style>
+
+        /* Timing Functions */
+/* ease → Starts slow, speeds up, slows down (default) */
+/* linear → Constant speed */
+/* ease-in → Starts slow, then speeds up */
+/* ease-out → Starts fast, then slows down */
+/* ease-in-out → Starts slow, speeds up, then slows down */
+
+        /* Styling for the button */
+        button {
+            background-color: blue;  /* Default background */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+
+            /* Applying transition to background color */
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        /* Hover effect for smooth transition */
+        button:hover {
+            background-color: red;  /* Color changes smoothly */
+        }
+
+        /* Styling for the box */
+        .box {
+            width: 100px; 
+            height: 100px;
+            background-color: green;
+            margin-top: 20px;
+
+            /* Transition multiple properties: width, height, background */
+            transition: width 1s, height 1s, background-color 0.5s ease-in-out;
+        }
+
+        /* Hover effect for the box */
+        .box:hover {
+            width: 200px;  /* Width increases */
+            height: 200px; /* Height increases */
+            background-color: yellow; /* Background color changes */
+        }
+
+        /* Transition with delay */
+        .delay-box {
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            margin-top: 20px;
+
+            /* Transition with a delay of 0.5s */
+            transition: background-color 1s ease 0.5s;
+        }
+
+        /* Hover effect with delay */
+        .delay-box:hover {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>CSS Transitions Example</h2>
+
+    <!-- Button with smooth color transition -->
+    <button>Hover Me</button>
+
+    <!-- Box with multiple property transitions -->
+    <div class="box"></div>
+
+    <!-- Box with delayed transition -->
+    <div class="delay-box"></div>
+
+</body>
+</html>
