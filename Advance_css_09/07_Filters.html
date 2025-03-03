@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        img {
+            width: 300px;
+            height: auto;
+            filter: saturate(100%) brightness(100%);
+            transition: filter 0.5s ease-in-out;
+        }
+
+        /* Summary
+blur(px) → Blurs the element.
+brightness(%) → Adjusts brightness.
+contrast(%) → Increases/decreases contrast.
+grayscale(%) → Converts to black & white.
+invert(%) → Inverts colors.
+sepia(%) → Adds a vintage effect.
+saturate(%) → Controls color intensity.
+opacity(%) → Controls transparency.
+hue-rotate(deg) → Changes color hue. */
+
+        img:hover {
+            filter: sepia(50%); /* Removes filter on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Hover to Remove Filter</h2>
+    <img src="./images (2).jpeg" alt="Sample Image">
+
+</body>
+</html>
